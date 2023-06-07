@@ -26,6 +26,11 @@
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <script>
       tailwind.config = {
         theme: {
@@ -69,7 +74,7 @@
 
     <!-- Navbar Start from Here -->
   
-    <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl shadow-slate-50">
+    <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl ">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div class="relative flex items-center justify-between">
           <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
@@ -133,42 +138,23 @@
 
     <!-- hero section -->
 
-    <div class="md:h-screen">
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid gap-10 lg:grid-cols-2">
-          <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary">
-              <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-                <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points=" 8,5 8,1 16,1 16,5" stroke-linejoin="round"></polyline>
-                <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="9,15 1,15 1,5 23,5 23,15 15,15" stroke-linejoin="round"></polyline>
-                <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="22,18 22,23 2,23 2,18" stroke-linejoin="round"></polyline>
-                <rect x="9" y="13" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" width="6" height="4" stroke-linejoin="round"></rect>
-              </svg>
-            </div>
-            <div class="max-w-xl mb-6">
-              <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold  text-gray-900 sm:text-6xl sm:leading-none">
-                Find Your <br class="hidden md:block" />
-                <span class="inline-block text-primary"> Desired </span>
-               cloths
-             
-              </h2>
-              <p class="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
-              </p>
-            </div>
-          
-          </div>
-          <div class="flex items-center justify-center -mx-4 lg:pl-8">
-            <div class="flex flex-col items-end px-3">
-              <img
-                class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                alt=""
-              />
-              <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
-            </div>
-            <div class="px-3">
-              <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+    <div class="">
+      <div class="relative">
+        <img src="assets/shop.jpg" class="absolute inset-0 object-cover w-full h-full" alt="" />
+        <div class="relative bg-gray-900 bg-opacity-75 md:h-screen">
+          <div class="px-4  mx-auto flex justify-center items-center sm:max-w-xl md:max-w-full  md:px-24 ">
+            <div class="flex items-center justify-center w-full">
+              <div class="w-full max-w-xl  flex flex-col justify-center items-center md:h-screen">
+                <h2 class=" mb-6 font-sans text-5xl font-bold text-white sm:leading-none">
+                  Find Your  <span class="text-primary ">Desired</span>  
+                </h2>
+                <div class="font-sans text-5xl font-bold text-white flex gap-2">
+                <p class="border-b-4 border-primary text-5xl font-bold text-white ">Cloths</p>
+                </div>
+               
+            
+              </div>
+           
             </div>
           </div>
         </div>
@@ -177,11 +163,28 @@
  
     <!-- about section  -->
 <div class="md:h-screen ">
-  <div class="relative px-4 pt-16 mx-auto lg:py-32 flex md:px-8 xl:px-20 sm:max-w-xl md:max-w-full">
-    <div class="">
-      <img src="assets/hero-1.png" class="object-cover object-top w-full h-64 max-w-xl -mb-16  lg:ml-64 xl:ml-8 lg:-mb-24 xl:-mb-28 lg:h-auto lg:max-w-screen-md" alt="" />
-    </div>
-    <div class="max-w-xl mx-auto flex justify-center items-center lg:max-w-screen-xl">
+  <div class="relative px-4 pt-16 mx-auto lg:py-32 flex lg:px-28  sm:max-w-xl md:max-w-full">
+   
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 md:h-full overflow-hidden rounded-lg max-w-3xl">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/tshirt.png" class="absolute flex justify-center items-center " alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/baby.png" class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/s1.png" class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  
+  </div>
+ 
+</div>
+
       <div class="mb-16 lg:max-w-lg lg:mb-0">
         <p class="text-3xl font-semibold border-b-4 border-primary w-40">ABOUT US</p>
     <p class="text-slate-600 mt-10">NEXT EXPORT LTD is one of the leading apparel-sourcing solution providers in Bangladesh. The company is specialized in supplying knitwear to many countries around the world. The company ensures proper quality by supervising the production from scratch to the final product and shipping products within the lead time.</p>
@@ -195,7 +198,7 @@
        
         </div>
       </div>
-    </div>
+
   
   </div>
 </div>
@@ -213,7 +216,7 @@
         <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
             Men
         </div>
-        <img class="px-1 py-5" src="assets/men.png" alt="dfd">
+        <img class="px-1 py-5 h-full" src="assets/men.png" alt="dfd">
     </div>
     <div class=" relative  rounded-lg overflow-hidden border-2 border-white">
       <div class="w-full h-full absolute left-0 top-0 bg-gradient-to-t from-yellow-400/20 to-blue-200/20">
@@ -221,7 +224,7 @@
         <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
             Women
         </div>
-        <img class="px-1 py-5" src="assets/women.png" alt="dfd">
+        <img class="px-1 py-5 h-full" src="assets/women.png" alt="dfd">
     </div>
     <div class=" relative  rounded-lg overflow-hidden border-2 border-white">
       <div class="w-full h-full absolute left-0 top-0 bg-gradient-to-t from-yellow-400/20 to-blue-200/20">
@@ -229,7 +232,7 @@
         <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
             Boys
         </div>
-        <img class="px-1 py-5" src="assets/hero.jpg" alt="dfd">
+        <img class="px-1 py-5 h-full" src="assets/hero.jpg" alt="dfd">
     </div>
     <div class=" relative  rounded-lg overflow-hidden border-2 border-white">
       <div class="w-full h-full absolute left-0 top-0 bg-gradient-to-t from-yellow-400/20 to-blue-200/20">
@@ -237,7 +240,7 @@
         <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
             Girls
         </div>
-        <img class="px-1 py-5" src="assets/girls.png" alt="dfd">
+        <img class="px-1 py-5 h-full" src="assets/girls.png" alt="dfd">
     </div>
     <div class=" relative  rounded-lg overflow-hidden border-2 border-white">
       <div class="w-full h-full absolute left-0 top-0 bg-gradient-to-t from-yellow-400/20 to-blue-200/20">
@@ -245,7 +248,7 @@
         <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
             Kids
         </div>
-        <img class="px-1 py-5" src="assets/kids.png" alt="dfd">
+        <img class="px-1 py-5 h-full" src="assets/kids.png" alt="dfd">
     </div>
 
   </div>
@@ -283,31 +286,31 @@
       <div class="grid grid-cols-5 gap-10 px-4 pt-16 mx-auto lg:py-32  md:px-8 xl:px-20 sm:max-w-xl md:max-w-full">
           <div class="flex flex-col justify-center items-center gap-5 bg-white px-8 rounded-xl py-8">
               <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
               </div>
               <p class="text-center text-base font-semibold">50+ SOURCING FACTORIES</p>
           </div>
           <div class="flex flex-col justify-center items-center gap-5 bg-white px-8 rounded-xl py-8">
             <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
-              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
             <p class="text-center text-base font-semibold">TEAM OF EXPERTS </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-5 bg-white px-8 rounded-xl py-8">
           <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 002-2v-6l-3.4-6.9A2 2 0 0016.8 4H7.2a2 2 0 00-1.8 1.1z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 002-2v-6l-3.4-6.9A2 2 0 0016.8 4H7.2a2 2 0 00-1.8 1.1z"/></svg>
           </div>
           <p class="text-center text-base font-semibold">PROPER TIME MANAGEMENT</p>
       </div>
       <div class="flex flex-col justify-center items-center gap-5 bg-white px-8 rounded-xl py-8">
         <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
-          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
         </div>
         <p class="text-center text-base font-semibold">OWN ACCESSORIES FACILITY</p>
     </div>
     <div class="flex flex-col justify-center items-center gap-5 bg-white px-8 rounded-xl py-8">
       <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg>
       </div>
       <p class="text-center text-base font-semibold">FAST SHIPMENT</p>
   </div>
@@ -315,7 +318,7 @@
     </div>
 
 <!-- Footer Section -->
-  <div class="bg-[#010F58]">
+  <div class="bg-[#2e928f]">
       <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-10">
           <div class="flex flex-col gap-6 items-start">
               <img class="h-12" src="https://milanfashionbd.com/wp-content/uploads/2023/04/WhatsApp_Image_2023-04-04_at_11.35.41_AM-removebg-preview-450x108.png" alt="footerlogo">
@@ -409,8 +412,9 @@
     ></path>
   </svg>
 </button>
-
 <script>
+  
+
   // Get the button
 let mybutton = document.getElementById('btn-back-to-top');
 
@@ -433,8 +437,11 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 </script>
 
+
   <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+
   </body>
 </html>
