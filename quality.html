@@ -30,7 +30,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -137,7 +137,7 @@
     </div>
 
     <!-- about section  -->
-<div class="md:h-screen md:my-10">
+<div class="md:h-screen ">
   <div class="relative px-4 pt-16 mx-auto lg:py-32 flex justify-between lg:px-28 items-center sm:max-w-xl md:max-w-full">
    
 
@@ -153,7 +153,50 @@
   </div>
 </div>
 
-
+<!-- products -->
+<div class="px-48 md:my-20">
+  <p class="text-4xl font-semibold text-center flex justify-center items-center mx-auto my-5">EQUIPMENT SUPPORT FOR QUALITY ASSURANCE</p>
+  <p class="text-abse  text-center flex justify-center items-center mx-auto my-5">The team follows the properly laid out process and customized formats for each process by taking approvals from the buyer at all required milestones. The team ensures that all the procedures, systems and processes are well institutionalized among the teams of vendor partners and followed to meet buyer’s expectations. NEXT EXPORT LTD Have all the Modern equipment to ensure the quality as per buyer requirements. We have Light Box, barcode reader matching, Gsm matching, Dummy, etc. So we can check everything before sending it to the buyer. We are also aware of the present European law and maintain it.</p>
+  <div class="grid grid-cols-2 gap-16 items-center ">
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/zaper.webp" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">BUTTON AND ZIPPER STRENGTH TEST MACHINE</p>
+      <p>Button and zipper strength test machine for check the strength of button and zipper as Germen law</p>
+    </div>
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/testing.png" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">TENSILE TESTING MACHINE</p>
+      <p>Tensile testing machine for automatic single yarn strength test.</p>
+    </div>
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/lightbox.jpg" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">LIGHT BOX</p>
+      <p>Color Light Box is used to check the color difference after another textile testing like color fastness, thus you can get the grade evaluation according to the specified standards.</p>
+    </div>
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/barcode.jpg" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">BAR-CODE SCANNER</p>
+      <p>Bar-code scanner for ensure the hangtag barcode readable</p>
+    </div>
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/weight.jpeg" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">GSM WEIGHT MEASURE MACHINE</p>
+      <p>GSM Weight measure machine and fabric cutting machine for ensure the weight as per Buyer requirement.</p>
+    </div>
+    <div class="flex flex-col gap-3 items-center justify-center text-center" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom">
+      <img class="h-96" src="assets/washing.webp" alt="zapper">
+      <p class="text-2xl font-semibold text-primary">WASHING MACHINE</p>
+      <p>Washing Machine to ensure the right color as per buyer requirement.</p>
+    </div>
+ 
+  </div>
+</div>
 
 
 <!-- Footer Section -->
@@ -277,9 +320,10 @@
     ></path>
   </svg>
 </button>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   
-
+  AOS.init();
   // Get the button
 let mybutton = document.getElementById('btn-back-to-top');
 
