@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buying house website</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+.map-responsive{
+
+overflow:hidden;
+
+padding-bottom:26.25%;
+
+position:relative;
+
+height:0;
+
+}
+
+.map-responsive iframe{
+
+left:0;
+
+top:0;
+
+height:400px;
+
+width:100%;
+
+position:absolute;
+
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "6rem",
+              xl: "7rem",
+              "2xl": "6rem",
+            },
+          },
+          extend: {
+            backgroundImage: {
+        'reward': "url('reward.png')",
+       
+      },
+            colors: {
+              bg: {
+                DEFAULT: "#ffbe00",
+                200: "#272727",
+                300: "#2e2e2e",
+              },
+              primary: {
+                DEFAULT: "#ffbe00",
+              
+              },
+              secondary: {
+                DEFAULT: "#ffbe00",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    </style>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+ 
+<!-- Logn here -->
+<section class="bg-slate-100 ">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+        <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
+         
+         TERRY TEXT LTD 
+        </a>
+        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
+            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
+                    Sign in to your account
+                </h1>
+                <form class="space-y-4 md:space-y-6" action="#">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " placeholder="name@company.com" required="">
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
+                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " required="">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                              <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 " required="">
+                            </div>
+                            <div class="ml-3 text-sm">
+                              <label for="remember" class="text-gray-500 ">Remember me</label>
+                            </div>
+                        </div>
+                        <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full text-white bg-primary hover:bg-purple-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign in</button>
+                 
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  
+  AOS.init();
+  // Get the button
+let mybutton = document.getElementById('btn-back-to-top');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener('click', backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+  <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+
+  </body>
+</html>
