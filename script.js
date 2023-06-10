@@ -1,16 +1,15 @@
-const counters = document.querySelectorAll('.counter')
-counters.forEach(counter => {
-counter.innerText = '0'
-const updateCounter = () => {
-const target = +counter.getAttribute('data-target')
-const c = +counter.innerText
-const increment = target / 200
-if(c < target) {
-counter.innerText = `${Math.ceil(c + increment)}`
-setTimeout(updateCounter, 1)
-} else {
-counter.innerText = target
-}
-}
-updateCounter()
-})
+let interval = 4000;
+let Displayvalue = document.querySelectorAll(".num");
+
+Displayvalue.forEach((valueDisplay) => {
+	let startValue = 0;
+	let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+	let duration = Math.floor(interval / endValue);
+	let counter = setInterval(function () {
+		startValue += 1;
+		valueDisplay.textContent = startValue;
+		if (startValue == endValue) {
+			clearInterval(counter);
+		}
+	}, duration);
+});

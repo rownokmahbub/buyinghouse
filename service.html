@@ -47,6 +47,90 @@ width:100%;
 position:absolute;
 
 }
+.container {
+  position: absolute;
+  width: 80vw;
+  transform:  translate(-50%, -50%);
+  top:50%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.box {
+  width: 21vmin;
+  height: 21vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 18px;
+  border-radius: 0.5em;
+  
+  
+}
+
+i{
+  color: var(--var-theme);
+  font-size: 2.5em;
+  text-align: center;
+
+}
+
+span.num {
+  color: black;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 2.8em;
+}
+
+span.text {
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+@media screen and (max-width:1024px) {
+  .container {
+    width: 85vw;
+  }
+  .box {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .box {
+    width: calc(50% -40px);
+    height: 30vmin;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container{
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
@@ -55,7 +139,7 @@ position:absolute;
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="script.js"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -92,7 +176,7 @@ position:absolute;
       };
     </script>
 
-    </style>
+  
   </head>
   <body style="font-family: 'Poppins', sans-serif">
  
@@ -201,28 +285,31 @@ position:absolute;
 
 <!-- what makes us special -->
 <p class="text-3xl font-semibold border-b-4 border-primary w-96 text-center mx-auto mb-10" data-aos="zoom-in">WHAT MAKES US SPECIAL</p>
-<div class="relative bg-primary">
- 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 items-center  py-20 lg:px-48">
-        <div class="items-center flex flex-col justify-center">
-            <p class="text-5xl font-semibold" data-target="50000">100+</p>
-            <p class="text-base font-medium text-slate-500">ASSOCIATE FACTORIES</p>
-        </div>
-        <div class="items-center flex flex-col justify-center">
-            <p class="text-5xl font-semibold">30+</p>
-            <p class="text-base font-medium text-slate-500">CLIENTS</p>
-        </div>
-
-        <div class="items-center flex flex-col justify-center">
-            <p class="text-5xl font-semibold">500+</p>
-            <p class="text-base font-medium text-slate-500">ASSOCIATE FACTORIES</p>
-        </div>
-        <div class="items-center flex flex-col justify-center">
-            <p class="text-5xl font-semibold">15+</p>
-            <p class="text-base font-medium text-slate-500">YEARS OF EXPERIENCE</p>
-        </div>
+<div class="relative bg-primary md:h-[26vh]">
+  <div class="grid grid-cols-4 gap-10 lg:px-48 py-10">
+    <div class="flex flex-col">
+      
+      <span class="num" data-val="100">000</span>
+      <span class="text">ASSOCIATE FACTORIES</span>
     </div>
+    <div class="flex flex-col gap-2">
+    
+      <span class="num" data-val="30">00</span>
+      <span class="text">CLIENTS</span>
+    </div>
+    <div class="flex flex-col gap-2">
+     
+      <span class="num" data-val="100">000</span>
+      <span class="text">ASSOCIATE FACTORIES</span>
+    </div>
+    <div class="flex flex-col gap-2">
+      
+      <span class="num" data-val="15">00</span>
+      <span class="text">YEARS OF EXPERIENCE</span>
+    </div>
+  </div>
 </div>
+
 
 <!-- Footer Section -->
 <div class="bg-slate-900 lg:px-48">
@@ -370,7 +457,7 @@ function backToTop() {
 
 </script>
 
-
+<script src="script.js"></script>
   <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
 
   </body>
