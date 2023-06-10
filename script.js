@@ -1,3 +1,5 @@
+
+// counter incerase
 let interval = 4000;
 let Displayvalue = document.querySelectorAll(".num");
 

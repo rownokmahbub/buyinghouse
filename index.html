@@ -67,8 +67,11 @@
       </style>
    </head>
    <body style="font-family: 'Poppins', sans-serif">
+
+  
+       
       <!-- Navbar Start from Here -->
-      <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl">
+       <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl hidden xl:block">
          <div class="">
             <div class="relative flex items-center justify-between px-48 py-4">
                <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
@@ -84,7 +87,7 @@
                            <path d="M6 9l6 6 6-6"/>
                         </svg>
                      </button>
-                     <!-- Dropdown menu -->
+                     
                      <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
                         <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
                            <li>
@@ -116,24 +119,58 @@
             </div>
          </div>
       </div>
+      <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl  block xl:hidden">
+         <div class="flex justify-between items-center px-4 py-4 relative">
+            <img class="w-28" src="assets/logo.png" alt="logo">
+            <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  text-white py-2.5 text-center inline-flex gap-1 items-center" type="button">
+               <img  src="assets/menu.svg" alt="menu">
+            </button>
+            <li class="absolute top-0 right-0">
+           
+            
+               <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
+                  <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
+                     <li>
+                        <a href="kitwear.html" class="block py-2 px-4 hover:bg-primary">knit wear</a>
+                     </li>
+                     <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-primary">Woven wear</a>
+                     </li>
+                     <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-primary">Sweater</a>
+                     </li>
+                     <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-primary">Leather Wear</a>
+                     </li>
+                     <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-primary">Outer Wear</a>
+                     </li>
+                     <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-primary">Home Textile</a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+         </div>
+         </div> 
       <!-- hero section -->
       <div id="controls-carousel" class="relative w-full" data-carousel="slide">
-         <!-- Carousel wrapper -->
-         <div class="relative h-56 overflow-hidden md:h-screen">
-            <!-- Item 1 -->
+   
+         <div class="relative h-96 overflow-hidden md:h-screen">
+       
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                  <div class="relative">
+                  <div class="relative h-96 xl:h-full">
                      <img src="assets/shop.jpg" class="absolute inset-0 object-cover w-full h-full" alt="" />
                      <div class="relative bg-gray-900 bg-opacity-75 md:h-screen">
-                        <div class="px-4   flex justify-center items-center sm:max-w-xl md:max-w-full  md:px-24 ">
+                        <div class="px-4 flex justify-center items-center sm:max-w-xl md:max-w-full  md:px-24 ">
                            <div class="flex items-center justify-center w-full">
                               <div class="w-full max-w-xl  flex flex-col justify-center items-center md:h-screen">
-                                 <h2 class=" mb-6 font-sans text-5xl font-bold text-white sm:leading-none">
+                                 <h2 class=" mb-6 font-sans text-3xl md:text-5xl font-bold text-white sm:leading-none">
                                     Find Your  <span class="text-primary ">Desired</span>  
                                  </h2>
-                                 <div class="font-sans text-5xl font-bold text-white flex gap-2">
-                                    <p class="border-b-4 border-primary text-5xl font-bold text-white ">Cloths</p>
+                                 <div class="font-sans text-3xl md:text-5xl font-bold text-white flex gap-2">
+                                    <p class="border-b-4 border-primary text-3xl md:text-5xl font-bold text-white ">Cloths</p>
                                  </div>
                               </div>
                            </div>
@@ -142,7 +179,7 @@
                   </div>
                </div>
             </div>
-            <!-- Item 2 -->
+            
             <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                   <div class="relative">
@@ -164,7 +201,7 @@
                   </div>
                </div>
             </div>
-            <!-- Item 3 -->
+           
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                   <div class="relative">
@@ -187,7 +224,7 @@
                </div>
             </div>
          </div>
-         <!-- Slider controls -->
+
          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -206,8 +243,8 @@
          </button>
       </div>
       <!-- about section  -->
-      <div class="relative px-4 pt-16 mx-auto lg:py-32 flex  gap-16 lg:px-48 ">
-         <div id="default-carousel" class="relative w-full" data-carousel="slide" data-aos="fade-right">
+      <div class="relative px-4 pt-16 mx-auto lg:py-32 flex flex-col xl:flex-row  gap-16 lg:px-48 ">
+         <div id="default-carousel" class="relative w-full py-10" data-carousel="slide" data-aos="fade-right">
             <!-- Carousel wrapper -->
             <div class="relative h-56 md:h-full overflow-hidden rounded-lg max-w-3xl">
                <!-- Item 1 -->
@@ -240,15 +277,15 @@
       <!-- product section -->
       <div class=" bg-zinc-50">
          <p class="text-center text-slate-800 font-semibold text-5xl pt-10 ">PRODUCTS</p>
-         <div class="grid grid-cols-5 gap-5 px-4 pt-16 mx-auto lg:py-16 md:px-8 xl:px-48 sm:max-w-xl md:max-w-full" >
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 px-4 pt-16 mx-auto lg:py-16 md:px-8 xl:px-48 sm:max-w-xl md:max-w-full" >
             <div class="hover:shadow-xl hover:scale-105 hover:transition duration-300 cursor-pointer">
                <div class=" relative  rounded-lg overflow-hidden border-2 border-white " data-aos="fade-right">
                   <div class="w-full h-full absolute left-0 top-0 bg-gradient-to-t from-yellow-400/20 to-blue-200/20 ">
                   </div>
-                  <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full">
+                  <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600  w-full ">
                      Men
                   </div>
-                  <img class="px-1 py-5 h-96" src="assets/men.png" alt="dfd">
+                  <img class="px-1 py-5 min-h-96 w-full xl:h-96 items-center flex justify-center" src="assets/men.png" alt="dfd">
                </div>
             </div>
             <div class="hover:shadow-xl hover:scale-105 hover:transition duration-300 cursor-pointer">
@@ -258,7 +295,7 @@
                   <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600 w-full">
                      Women
                   </div>
-                  <img class="px-1 py-5 h-96" src="assets/women.png" alt="dfd">
+                  <img class="px-1 py-5 min-h-96 w-full xl:h-96 items-center flex justify-center" src="assets/women.png" alt="dfd">
                </div>
             </div>
             <div class="hover:shadow-xl hover:scale-105 hover:transition duration-300 cursor-pointer">
@@ -268,7 +305,7 @@
                   <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600 w-full">
                      Boys
                   </div>
-                  <img class="px-1 py-5 h-96" src="assets/hero.jpg" alt="dfd">
+                  <img class="px-1 py-5 min-h-96 w-full xl:h-96 items-center flex justify-center" src="assets/hero.jpg" alt="dfd">
                </div>
             </div>
             <div class="hover:shadow-xl hover:scale-105 hover:transition duration-300 cursor-pointer">
@@ -278,7 +315,7 @@
                   <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600 w-full">
                      Girls
                   </div>
-                  <img class="px-1 py-5 h-96" src="assets/girls.png" alt="dfd">
+                  <img class="px-1 py-5 min-h-96 w-full xl:h-96 items-center flex justify-center" src="assets/girls.png" alt="dfd">
                </div>
             </div>
             <div class="hover:shadow-xl hover:scale-105 hover:transition duration-300 cursor-pointer">
@@ -288,13 +325,13 @@
                   <div class="text-white text-xl font-semibold py-2 absolute bottom-0 left-0 flex justify-center bg-gradient-to-b from-gray-900 to-gray-600 w-full">
                      Kids
                   </div>
-                  <img class="px-1 py-5 h-96" src="assets/kids.png" alt="dfd">
+                  <img class="px-1 py-5 min-h-96 w-full xl:h-96 items-center flex justify-center" src="assets/kids.png" alt="dfd">
                </div>
             </div>
          </div>
       </div>
       <!-- our mission section  -->
-      <div class="relative px-4 mx-auto lg:py-16 flex justify-between gap-16 md:px-8 xl:px-48">
+      <div class="relative px-4 mx-auto py-16 flex flex-col xl:flex-row justify-between gap-16 md:px-8 xl:px-48">
          <div class=" flex justify-center items-center" data-aos="fade-right">
             <div class=" lg:max-w-xl lg:mb-0">
                <p class="text-3xl font-semibold border-b-4 border-primary w-52">OUR MISSION</p>
@@ -315,8 +352,8 @@
       </div>
       <!-- our services -->
       <div class="md:screen bg-slate-50">
-         <p class="text-center text-5xl font-semibold te-800 pt-10" data-aos="zoom-in">WHAT MAKES US SPECIAL</p>
-         <div class="grid grid-cols-5 gap-10 px-4 pt-16 mx-auto pb-20  md:px-8 xl:px-48 sm:max-w-xl md:max-w-full">
+         <p class="text-center text-3xl xl:text-5xl font-semibold  pt-10" data-aos="zoom-in">WHAT MAKES US SPECIAL</p>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 px-4 pt-16 mx-auto pb-20  md:px-8 xl:px-48 sm:max-w-xl md:max-w-full">
             <div class="flex flex-col justify-center items-center gap-5 bg-white drop-shadow-md shadow-[#b2beb5] px-8 rounded-xl py-8 hover:shadow-xl hover:scale-105 hover:transition duration-300 " data-aos="fade-right">
                <div class="bg-primary rounded-full flex justify-center items-center w-20 h-20">
                   <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -367,7 +404,7 @@
          </div>
       </div>
       <!-- Footer Section -->
-      <div class="bg-slate-900 lg:px-48">
+      <div class="bg-slate-900 px-5 lg:px-48">
          <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-5">
             <div class="flex flex-col gap-6 items-start">
                <img class="h-12" src="assets/logo.png" alt="footerlogo">
