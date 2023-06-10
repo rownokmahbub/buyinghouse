@@ -1,397 +1,353 @@
 <!DOCTYPE html>
 <html data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buying house website</title>
-    <link rel="icon" type="x-icon" href="assets/favicon.ico">
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style>
-      html {
-  scroll-behavior: smooth;
-}
-.map-responsive{
-
-overflow:hidden;
-
-padding-bottom:26.25%;
-
-position:relative;
-
-height:0;
-
-}
-
-.map-responsive iframe{
-
-left:0;
-
-top:0;
-
-height:400px;
-
-width:100%;
-
-position:absolute;
-
-}
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            padding: {
-              DEFAULT: "1rem",
-              sm: "2rem",
-              lg: "6rem",
-              xl: "7rem",
-              "2xl": "6rem",
-            },
-          },
-          extend: {
-            backgroundImage: {
-        'reward': "url('reward.png')",
-       
-      },
-            colors: {
-              bg: {
-                DEFAULT: "#ffbe00",
-                200: "#272727",
-                300: "#2e2e2e",
-              },
-              primary: {
-                DEFAULT: "#ffbe00",
-              
-              },
-              secondary: {
-                DEFAULT: "#ffbe00",
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    </style>
-  </head>
-  <body style="font-family: 'Poppins', sans-serif">
- 
-
-    <!-- Navbar Start from Here -->
-   
-    <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Buying house website</title>
+      <link rel="icon" type="x-icon" href="assets/favicon.ico">
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css"
+         rel="stylesheet"
+         type="text/css"
+         />
+      <style>
+         html {
+         scroll-behavior: smooth;
+         }
+         .map-responsive{
+         overflow:hidden;
+         padding-bottom:26.25%;
+         position:relative;
+         height:0;
+         }
+         .map-responsive iframe{
+         left:0;
+         top:0;
+         height:400px;
+         width:100%;
+         position:absolute;
+         }
+      </style>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script>
+         tailwind.config = {
+           theme: {
+             container: {
+               padding: {
+                 DEFAULT: "1rem",
+                 sm: "2rem",
+                 lg: "6rem",
+                 xl: "7rem",
+                 "2xl": "6rem",
+               },
+             },
+             extend: {
+               backgroundImage: {
+           'reward': "url('reward.png')",
+          
+         },
+               colors: {
+                 bg: {
+                   DEFAULT: "#ffbe00",
+                   200: "#272727",
+                   300: "#2e2e2e",
+                 },
+                 primary: {
+                   DEFAULT: "#ffbe00",
+                 
+                 },
+                 secondary: {
+                   DEFAULT: "#ffbe00",
+                 },
+               },
+             },
+           },
+         };
+      </script>
+      </style>
+   </head>
+   <body style="font-family: 'Poppins', sans-serif">
+      <!-- Navbar Start from Here -->
+      <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl">
+         <div class="">
+            <div class="relative flex items-center justify-between px-48 py-4">
+               <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
+               <img class="h-12" src="assets/logo.png" alt="">
+               </a>
+               <ul class=" items-center hidden space-x-8 lg:flex ">
+                  <a href="index.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Home</a>
+                  <a href="about.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">About Us</a>
+                  <li class="hover:border-b border-primary">
+                     <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  text-white py-2.5 text-center inline-flex gap-1 items-center" type="button">
+                        Products 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                           <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                     </button>
+                     <!-- Dropdown menu -->
+                     <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
+                        <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
+                           <li>
+                              <a href="kitwear.html" class="block py-2 px-4 hover:bg-primary">knit wear</a>
+                           </li>
+                           <li>
+                              <a href="#" class="block py-2 px-4 hover:bg-primary">Woven wear</a>
+                           </li>
+                           <li>
+                              <a href="#" class="block py-2 px-4 hover:bg-primary">Sweater</a>
+                           </li>
+                           <li>
+                              <a href="#" class="block py-2 px-4 hover:bg-primary">Leather Wear</a>
+                           </li>
+                           <li>
+                              <a href="#" class="block py-2 px-4 hover:bg-primary">Outer Wear</a>
+                           </li>
+                           <li>
+                              <a href="#" class="block py-2 px-4 hover:bg-primary">Home Textile</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <a href="quality.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Quality Assurance</a>
+                  <a href="csr.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Csr</a>
+                  <a href="service.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Services</a>
+                  <a href="contact.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-primary">Contact</a>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Hero section  -->
       <div class="">
-        <div class="relative flex items-center justify-between px-48 py-4">
-          <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
-            <img class="h-12" src="assets/logo.png" alt="">
-            
-          </a>
-          <ul class=" items-center hidden space-x-8 lg:flex ">
-         
-          <a href="index.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Home</a>
-          <a href="about.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">About Us</a>
-       
-           
-                        <li class="hover:border-b border-primary">
-              
-                          <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  text-white py-2.5 text-center inline-flex gap-1 items-center" type="button">Products 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
-                              <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
-                                <li>
-                                  <a href="kitwear.html" class="block py-2 px-4 hover:bg-primary">knit wear</a>
-                                </li>
-                               
-                                <li>
-                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Woven wear</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Sweater</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Leather Wear</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Outer Wear</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block py-2 px-4 hover:bg-primary">Home Textile</a>
-                                </li>
-                              </ul>
-                          </div>
-                          
-                                    </li>
-                                    <a href="quality.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Quality Assurance</a>
-                                    <a href="csr.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Csr</a>
-                                    <a href="service.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Services</a>
-                                    <a href="contact.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-primary">Contact</a>
-          </ul>
-      
-      
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero section  -->
-<div class="">
-    <div class="flex flex-col justify-center items-center px-48 ">
-        <p class="text-center text-5xl font-semibold  py-8  " data-aos="zoom-in"> WRITE YOUR QUERY HERE</p>
-        <hr class=" w-48 border-b-4 border-primary ">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-10">
-            <input type="text" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Name" data-aos="zoom-in">
-            <input type="email" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Email" data-aos="zoom-in">
-        </div>
-        <div class="grid grid-cols-1 w-full mt-5">
-            <input type="text" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Subject" data-aos="zoom-in">
-           
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-5">
-            <input type="text" class="px-4 py-1 rounded-md border-slate-400 w-full border" placeholder="Country (optional)" data-aos="zoom-in">
-            <input type="file" class="px-4  rounded-md border-slate-400 w-full border" placeholder="Email" data-aos="zoom-in">
-        </div>
-        <div class="grid grid-cols-1 w-full mt-5" data-aos="zoom-in">
-            <textarea class="px-4 py-2 rounded-md border-slate-400 w-full border" name="textarea" id="" cols="30" rows="5" placeholder="Message"></textarea>
-           
-           
-        </div>
-        <div class="flex justify-center items-center my-5" >
-            <button class="px-4 py-2 bg-primary hover:bg-slate-500 text-white rounded-xl">Sent Message</button>
-        </div>
-    </div>
- 
-
-</div>
-
-
-
-    <!-- our services -->
-
-    <div class="md:screen bg-slate-50">
-
-      <div class="grid grid-cols-4 gap-10 px-4 pt-16 mx-auto lg:py-20  md:px-8 xl:px-48 sm:max-w-xl md:max-w-full">
-       
-          <div class="flex flex-col py-5 items-center gap-5 bg-white px-8 rounded-xl" data-aos="fade-left">
-            <div class="h-20">
-              <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+         <div class="flex flex-col justify-center items-center px-48 ">
+            <p class="text-center text-5xl font-semibold  py-8  " data-aos="zoom-in"> WRITE YOUR QUERY HERE</p>
+            <hr class=" w-48 border-b-4 border-primary ">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-10">
+               <input type="text" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Name" data-aos="zoom-in">
+               <input type="email" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Email" data-aos="zoom-in">
             </div>
-            <p class="text-center text-lg font-semibold mt-2">ADDRESS </p>
+            <div class="grid grid-cols-1 w-full mt-5">
+               <input type="text" class="px-4 py-2 rounded-md border-slate-400 w-full border" placeholder="Subject" data-aos="zoom-in">
             </div>
-          
-          
-            <p class="text-center text-base mt-5">House - 8, Road - 639, Block - C, West Masdair Paka Pul, Fathullah, Narayangonj-1420</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="zoom-in">
-          <div class="h-20">
-            <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-          </div>
-          <p class="text-center text-lg font-semibold mt-2">PHONE </p>
-          </div>
-          
-           
-            <p class="text-center text-base mt-5">+8801709977593</p>
-        </div>
-        <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="zoom-in">
-          <div class="h-20">
-            <a href="https://wa.me/01709977593?text=I'm%20interested%20in%20your%20car%20for%20sale" class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20" target=”_blank”>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#ffbe00"><path d="M24 11.7c0 6.45-5.27 11.68-11.78 11.68-2.07 0-4-.53-5.7-1.45L0 24l2.13-6.27a11.57 11.57 0 0 1-1.7-6.04C.44 5.23 5.72 0 12.23 0 18.72 0 24 5.23 24 11.7M12.22 1.85c-5.46 0-9.9 4.41-9.9 9.83 0 2.15.7 4.14 1.88 5.76L2.96 21.1l3.8-1.2a9.9 9.9 0 0 0 5.46 1.62c5.46 0 9.9-4.4 9.9-9.83a9.88 9.88 0 0 0-9.9-9.83m5.95 12.52c-.08-.12-.27-.19-.56-.33-.28-.14-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.29-.75.93-.91 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43a8.64 8.64 0 0 1-1.6-1.98c-.18-.29-.03-.44.12-.58.13-.13.29-.34.43-.5.15-.17.2-.3.29-.48.1-.2.05-.36-.02-.5-.08-.15-.65-1.56-.9-2.13-.24-.58-.48-.48-.64-.48-.17 0-.37-.03-.56-.03-.2 0-.5.08-.77.36-.26.29-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.14.19 2 3.17 4.93 4.32 2.94 1.15 2.94.77 3.47.72.53-.05 1.7-.7 1.95-1.36.24-.67.24-1.25.17-1.37"/></svg>
-          </a>
-          <p class="text-center text-lg font-semibold mt-2">WHATSAPP </p>
-          </div>
-          
-            <p class="text-center text-base mt-5">To get the fastest response, click the icon above to redirect to WhatsApp</p>
-        </div>
-        <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="fade-left">
-          <div class="h-20">
-            <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </div>
-          <p class="text-center text-lg font-semibold mt-2">EMAIL </p>
-          </div>
-       
-            <p class="text-center text-base mt-5">info@terrytexltd.com</p>
-        </div>
-     
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-5">
+               <input type="text" class="px-4 py-1 rounded-md border-slate-400 w-full border" placeholder="Country (optional)" data-aos="zoom-in">
+               <input type="file" class="px-4  rounded-md border-slate-400 w-full border" placeholder="Email" data-aos="zoom-in">
+            </div>
+            <div class="grid grid-cols-1 w-full mt-5" data-aos="zoom-in">
+               <textarea class="px-4 py-2 rounded-md border-slate-400 w-full border" name="textarea" id="" cols="30" rows="5" placeholder="Message"></textarea>
+            </div>
+            <div class="flex justify-center items-center my-5" >
+               <button class="px-4 py-2 bg-primary hover:bg-slate-500 text-white rounded-xl">Sent Message</button>
+            </div>
+         </div>
       </div>
-
-    </div>
-    <!-- map -->
-    <div class="map-responsive">
-    
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7310.987786904497!2d90.47451754946005!3d23.622477245942047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b0ff1ff1a663%3A0x5bc212911a546817!2sWest%20Masdair%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1686159297704!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  
-
-<!-- Footer Section -->
-<div class="bg-slate-900 lg:px-48">
-  <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-5">
-      <div class="flex flex-col gap-6 items-start">
-          <img class="h-12" src="assets/logo.png" alt="footerlogo">
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut cras velit senectus id tellus aliquam enim felis. Sed commodo cursus tellus sapien, viverra imperdiet morbi dignissim. Consequat in metus arcu eget.</p>
-          <div class="flex gap-4 items-center">
-            <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-            <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-          
+      <!-- our services -->
+      <div class="md:screen bg-slate-50">
+         <div class="grid grid-cols-4 gap-10 px-4 pt-16 mx-auto lg:py-20  md:px-8 xl:px-48 sm:max-w-xl md:max-w-full">
+            <div class="flex flex-col py-5 items-center gap-5 bg-white px-8 rounded-xl" data-aos="fade-left">
+               <div class="h-20">
+                  <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                     </svg>
+                  </div>
+                  <p class="text-center text-lg font-semibold mt-2">ADDRESS </p>
+               </div>
+               <p class="text-center text-base mt-5">House - 8, Road - 639, Block - C, West Masdair Paka Pul, Fathullah, Narayangonj-1420</p>
+            </div>
+            <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="zoom-in">
+               <div class="h-20">
+                  <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                     </svg>
+                  </div>
+                  <p class="text-center text-lg font-semibold mt-2">PHONE </p>
+               </div>
+               <p class="text-center text-base mt-5">+8801709977593</p>
+            </div>
+            <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="zoom-in">
+               <div class="h-20">
+                  <a href="https://wa.me/01709977593?text=I'm%20interested%20in%20your%20car%20for%20sale" class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20" target=”_blank”>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#ffbe00">
+                        <path d="M24 11.7c0 6.45-5.27 11.68-11.78 11.68-2.07 0-4-.53-5.7-1.45L0 24l2.13-6.27a11.57 11.57 0 0 1-1.7-6.04C.44 5.23 5.72 0 12.23 0 18.72 0 24 5.23 24 11.7M12.22 1.85c-5.46 0-9.9 4.41-9.9 9.83 0 2.15.7 4.14 1.88 5.76L2.96 21.1l3.8-1.2a9.9 9.9 0 0 0 5.46 1.62c5.46 0 9.9-4.4 9.9-9.83a9.88 9.88 0 0 0-9.9-9.83m5.95 12.52c-.08-.12-.27-.19-.56-.33-.28-.14-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.29-.75.93-.91 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43a8.64 8.64 0 0 1-1.6-1.98c-.18-.29-.03-.44.12-.58.13-.13.29-.34.43-.5.15-.17.2-.3.29-.48.1-.2.05-.36-.02-.5-.08-.15-.65-1.56-.9-2.13-.24-.58-.48-.48-.64-.48-.17 0-.37-.03-.56-.03-.2 0-.5.08-.77.36-.26.29-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.14.19 2 3.17 4.93 4.32 2.94 1.15 2.94.77 3.47.72.53-.05 1.7-.7 1.95-1.36.24-.67.24-1.25.17-1.37"/>
+                     </svg>
+                  </a>
+                  <p class="text-center text-lg font-semibold mt-2">WHATSAPP </p>
+               </div>
+               <p class="text-center text-base mt-5">To get the fastest response, click the icon above to redirect to WhatsApp</p>
+            </div>
+            <div class="flex flex-col items-center gap-5 bg-white px-8 rounded-xl py-5" data-aos="fade-left">
+               <div class="h-20">
+                  <div class="bg-slate-900 rounded-full flex justify-center items-center w-20 h-20">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                     </svg>
+                  </div>
+                  <p class="text-center text-lg font-semibold mt-2">EMAIL </p>
+               </div>
+               <p class="text-center text-base mt-5">info@terrytexltd.com</p>
+            </div>
+         </div>
+      </div>
+      <!-- map -->
+      <div class="map-responsive">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7310.987786904497!2d90.47451754946005!3d23.622477245942047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b0ff1ff1a663%3A0x5bc212911a546817!2sWest%20Masdair%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1686159297704!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Footer Section -->
+      <div class="bg-slate-900 lg:px-48">
+         <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-5">
+            <div class="flex flex-col gap-6 items-start">
+               <img class="h-12" src="assets/logo.png" alt="footerlogo">
+               <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut cras velit senectus id tellus aliquam enim felis. Sed commodo cursus tellus sapien, viverra imperdiet morbi dignissim. Consequat in metus arcu eget.</p>
+               <div class="flex gap-4 items-center">
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="flex flex-col gap-5 items-start lg:ml-14">
+               <p class="text-white font-medium text-2xl">Our Services</p>
+               <div class="flex gap-2 items-center group">
+                  <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">About Us</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="property.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Property</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="explore.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Our Agents</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Careers</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="contact.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Contact</a>
+               </div>
+            </div>
+            <div class="flex flex-col gap-5 items-start lg:ml-14">
+               <p class="text-white font-medium text-2xl">Quick Link</p>
+               <div class="flex gap-2 items-center group">
+                  <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">About Us</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="property.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Property</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="explore.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Our Agents</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Careers</a>
+               </div>
+               <div class="flex gap-2 items-center group">
+                  <a href="contact.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Contact</a>
+               </div>
+            </div>
+            <div class="flex flex-col gap-6 items-start text-white">
+               <p class="text-white font-medium text-2xl">Contact Us</p>
+               <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <div class="space-y-1">
+                     <p>Phone</p>
+                     <p>+8801709977593</p>
+                  </div>
+               </div>
+               <div class="flex gap-3 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                     <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div class="space-y-1">
+                     <p>Email</p>
+                     <p>info@terrytexltd.com</p>
+                  </div>
+               </div>
+               <div class="flex gap-3 items-center ">
+                  <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                     <path d="M14 3v5h5M12 18v-6M9 15h6"/>
+                  </svg>
+                  <div class="space-y-1">
+                     <p>Address</p>
+                     <p>House - 8, Road - 639, Block - C, West Masdair Paka Pul, Fathullah, Narayangonj-1420</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Back to top button -->
+      <button
+         type="button"
+         data-mdb-ripple="true"
+         data-mdb-ripple-color="light"
+         class="inline-block p-3 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-secondary hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out   bottom-5 right-5 fixed"
+         id="btn-back-to-top"
+         >
+         <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            class="w-4 h-4"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            >
+            <path
+               fill="currentColor"
+               d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+               ></path>
+         </svg>
+      </button>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+         // Get the button
+         let mybutton = document.getElementById('btn-back-to-top');
          
-          </div>
-      </div>
-      <div class="flex flex-col gap-5 items-start lg:ml-14">
-        <p class="text-white font-medium text-2xl">Our Services</p>
-        <div class="flex gap-2 items-center group">
-          
-          <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">About Us</a>
-        </div>
-        <div class="flex gap-2 items-center group">
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function () {
+         scrollFunction();
+         };
          
-          <a href="property.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Property</a>
-        </div>
-       
-        <div class="flex gap-2 items-center group">
-       
-          <a href="explore.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Our Agents</a>
-        </div>
-        <div class="flex gap-2 items-center group">
-        
-          <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Careers</a>
-        </div>
-        <div class="flex gap-2 items-center group">
-       
-          <a href="contact.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Contact</a>
-        </div>
-   
-      
-      </div>
-      <div class="flex flex-col gap-5 items-start lg:ml-14">
-        <p class="text-white font-medium text-2xl">Quick Link</p>
-        <div class="flex gap-2 items-center group">
-          
-          <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">About Us</a>
-        </div>
-        <div class="flex gap-2 items-center group">
+         function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = 'block';
+         } else {
+           mybutton.style.display = 'none';
+         }
+         }
+         // When the user clicks on the button, scroll to the top of the document
+         mybutton.addEventListener('click', backToTop);
          
-          <a href="property.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Property</a>
-        </div>
-       
-        <div class="flex gap-2 items-center group">
-       
-          <a href="explore.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Our Agents</a>
-        </div>
-        <div class="flex gap-2 items-center group">
-        
-          <a href="about.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Careers</a>
-        </div>
-        <div class="flex gap-2 items-center group">
-       
-          <a href="contact.html" class="text-white  text-base group-hover:text-secondary cursor-pointer">Contact</a>
-        </div>
-   
-      
-      </div>
-    
-      <div class="flex flex-col gap-6 items-start text-white">
-        <p class="text-white font-medium text-2xl">Contact Us</p>
-     <div class="flex gap-3 items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        <div class="space-y-1">
-          <p>Phone</p>
-          <p>+8801709977593</p>
-        </div>
-     </div>
-     <div class="flex gap-3 items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-      <div class="space-y-1">
-        <p>Email</p>
-        <p>info@terrytexltd.com</p>
-      </div>
-   </div>
-   <div class="flex gap-3 items-center ">
-    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M12 18v-6M9 15h6"/></svg>
-    <div class="space-y-1">
-      <p>Address</p>
-      <p>House - 8, Road - 639, Block - C, West Masdair Paka Pul, Fathullah, Narayangonj-1420</p>
-    </div>
- </div>
-      </div>
-  </div>
-
-</div>
-<!-- Back to top button -->
-<button
-  type="button"
-  data-mdb-ripple="true"
-  data-mdb-ripple-color="light"
-  class="inline-block p-3 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-secondary hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out   bottom-5 right-5 fixed"
-  id="btn-back-to-top"
->
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    data-prefix="fas"
-    class="w-4 h-4"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-  >
-    <path
-      fill="currentColor"
-      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-    ></path>
-  </svg>
-</button>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  
-  AOS.init();
-  // Get the button
-let mybutton = document.getElementById('btn-back-to-top');
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = 'block';
-  } else {
-    mybutton.style.display = 'none';
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener('click', backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-</script>
-
-
-  <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
-
-  </body>
+         function backToTop() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+         }
+         
+      </script>
+      <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+   </body>
 </html>
