@@ -81,54 +81,92 @@
    </head>
    <body style="font-family: 'Poppins', sans-serif">
       <!-- Navbar Start from Here -->
-      <div class="bg-slate-900 z-50 sticky top-0 left-0 shadow-xl">
-         <div class="">
-            <div class="relative flex items-center justify-between px-48 py-4">
-               <a href="#" aria-label="Company" title="Company" class="inline-flex items-center">
-               <img class="h-12" src="assets/logo.png" alt="">
-               </a>
-               <ul class=" items-center hidden space-x-8 lg:flex ">
-                  <a href="index.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Home</a>
-                  <a href="about.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">About Us</a>
-                  <li class="hover:border-b border-primary">
-                     <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  text-white py-2.5 text-center inline-flex gap-1 items-center" type="button">
-                        Products 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                           <path d="M6 9l6 6 6-6"/>
-                        </svg>
-                     </button>
-                     <!-- Dropdown menu -->
-                     <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
-                        <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
-                           <li>
-                              <a href="kitwear.html" class="block py-2 px-4 hover:bg-primary">knit wear</a>
-                           </li>
-                           <li>
-                              <a href="#" class="block py-2 px-4 hover:bg-primary">Woven wear</a>
-                           </li>
-                           <li>
-                              <a href="#" class="block py-2 px-4 hover:bg-primary">Sweater</a>
-                           </li>
-                           <li>
-                              <a href="#" class="block py-2 px-4 hover:bg-primary">Leather Wear</a>
-                           </li>
-                           <li>
-                              <a href="#" class="block py-2 px-4 hover:bg-primary">Outer Wear</a>
-                           </li>
-                           <li>
-                              <a href="#" class="block py-2 px-4 hover:bg-primary">Home Textile</a>
-                           </li>
-                        </ul>
-                     </div>
+      <nav
+      class="
+        flex flex-wrap
+        items-center
+        justify-between
+        w-full
+        py-4
+        md:py-6
+        px-4 xl:px-48
+        text-lg 
+        bg-slate-900 z-30 sticky top-0 left-0 shadow-xl
+      "
+    >
+     <div>
+        <a href="index.html">
+         <img class="h-10" src="assets/logo.png" alt="logo">
+        </a>
+      </div>
+     <img   id="menu-button"
+     class="h-6 w-6 cursor-pointer md:hidden block" src="assets/menu.svg" alt="menu">
+     
+     
+     <div class="hidden w-full md:flex md:items-center md:w-auto " id="menu">
+        <ul
+          class="
+            pt-4
+            text-base 
+            md:flex
+            md:justify-between items-center gap-5
+            md:pt-0"
+        >
+          <li>
+            <a href="index.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">About Us</a>
+          </li>
+          <li class="hover:border-b border-primary">
+            <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class=" text-base  font-medium  text-white py-2.5 text-center inline-flex gap-1 items-center" type="button">
+               Products 
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"/>
+               </svg>
+            </button>
+            
+            <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-500 shadow ">
+               <ul class="py-1 text-sm  " aria-labelledby="multiLevelDropdownButton">
+                  <li>
+                     <a href="kitwear.html" class="block py-2 px-4 hover:bg-primary">knit wear</a>
                   </li>
-                  <a href="quality.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Quality Assurance</a>
-                  <a href="csr.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-primary">Csr</a>
-                  <a href="service.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Services</a>
-                  <a href="contact.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Contact</a>
+                  <li>
+                     <a href="#" class="block py-2 px-4 hover:bg-primary">Woven wear</a>
+                  </li>
+                  <li>
+                     <a href="#" class="block py-2 px-4 hover:bg-primary">Sweater</a>
+                  </li>
+                  <li>
+                     <a href="#" class="block py-2 px-4 hover:bg-primary">Leather Wear</a>
+                  </li>
+                  <li>
+                     <a href="#" class="block py-2 px-4 hover:bg-primary">Outer Wear</a>
+                  </li>
+                  <li>
+                     <a href="#" class="block py-2 px-4 hover:bg-primary">Home Textile</a>
+                  </li>
                </ul>
             </div>
-         </div>
+         </li>
+         <li>
+            <a href="quality.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Quality Assurance</a>
+         </li>
+         <li>
+            
+         </li>  <a href="csr.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-primary">Csr</a><li>
+            
+         </li>  <a href="service.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Services</a><li>
+            
+         </li>
+    
+        <li>    <a href="contact.html" class="font-medium hover:border-b-2 hover:border-b-secondary hover:text-secondary cursor-pointer text-white">Contact</a></li>
+        
+     
+        </ul>
       </div>
+  </nav>
+
       <!-- Hero section  -->
       <div class="relative px-4 mx-auto lg:py-5 flex flex-col xl:flex-row justify-between  md:px-8 xl:px-48 ">
          <div class="" data-aos="fade-right">
@@ -284,5 +322,6 @@
          
       </script>
       <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+      <script src="script.js"></script>
    </body>
 </html>
